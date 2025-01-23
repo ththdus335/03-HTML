@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>table</title>
+    <style>
+      @font-face {
+        font-family: Pretendard-Bold;
+        src: url(./webfonts/Pretendard-Bold.woff);
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 1000px;
+        table-layout: fixed;
+      }
+      td {
+        border: 1px solid #ccc;
+        padding: 10px;
+      }
+      tr td:first-child {
+        border-left: none;
+      }
+      tr td:last-child {
+        border-right: none;
+      }
+      tr:first-child {
+        border-top: 2px solid #000;
+      }
+      .bus,
+      .mon {
+        text-align: center;
+        background: #eee;
+      }
+      .bus {
+        width: 10%;
+      }
+      .mon {
+        width: 20%;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td rowspan="2" class="bus">일반버스</td>
+        <td class="mon">교통카드</td>
+        <td class="con">일반 : 1,500원 / 청소년 : 750원 / 어린이 : 350원</td>
+      </tr>
+      <tr>
+        <td class="mon">현금요금</td>
+        <td class="con">일반 : 1,700원 / 청소년 : 900원 / 어린이 : 400원</td>
+      </tr>
+    </table>
+  </body>
+</html>

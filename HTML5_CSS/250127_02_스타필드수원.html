@@ -7,19 +7,25 @@
     <title>스타필드 수원</title>
   </head>
   <style>
+    @font-face {
+      font-family: "NotoSansKR-Regular";
+      src: url(./webfonts/NotoSansKR-Regular.woff);
+    }
     * {
       margin: 0;
       padding: 0;
     }
     .con {
-      width: 1400px;
+      width: 1180px;
       margin: 0 auto;
     }
-    ul {
-      margin: 0 auto;
+    .con ul {
       list-style: none;
     }
-    ul li {
+    .con ul li:hover {
+      box-shadow: 0 10px 10px #ccc;
+    }
+    .con ul li {
       border-radius: 20px;
       overflow: hidden;
       margin-right: 20px;
@@ -27,10 +33,10 @@
       height: 458px;
       float: left;
     }
-    ul li:nth-child(2n-1) {
+    .con ul li:nth-child(2n-1) {
       margin-top: 100px;
     }
-    ul li:last-child {
+    .con ul li:last-child {
       margin-right: 0;
     }
     a {
@@ -59,7 +65,7 @@
     ul li a .tex > h2 {
       font-weight: normal;
       font-size: 24px;
-      letter-spacing: -1px;
+      letter-spacing: -2px;
       padding-top: 10px;
     }
   </style>
@@ -118,7 +124,7 @@
             </p>
             <div class="tex">
               <p>01.01(수) - 01.31(금)</p>
-              <h2>오시는 길 안내</h2>
+              <h2>별마당 도서관 1월 강연&공연 안내</h2>
             </div>
           </a>
         </li>

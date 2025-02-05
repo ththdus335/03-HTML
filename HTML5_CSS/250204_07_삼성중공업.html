@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    ul {
+      width: 1720px;
+      height: 630px;
+      display: flex;
+      margin: 50px auto;
+      list-style: none;
+      color: #fff;
+    }
+    .sam {
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    .sam li {
+      width: calc(100% / 4);
+      padding-top: 200px;
+      transition: 0.5s;
+    }
+    .sam li:not(:hover) {
+      text-align: center;
+      padding-top: 240px;
+      box-sizing: border-box;
+    }
+    .sam li .con div p:nth-child(1) {
+      padding-bottom: 30px;
+      font-size: 35px;
+      font-weight: 900;
+    }
+    .sam li:hover .con div p:nth-child(1) {
+      font-size: 50px;
+      font-weight: 900;
+    }
+
+    .sam li:nth-child(1) {
+      background: url(https://www.samsungshi.com/images/main/mSolution_bg_01.jpg)
+        center/cover;
+    }
+    .sam li:nth-child(2) {
+      background: url(https://www.samsungshi.com/images/main/mSolution_bg_02.jpg)
+        0 / cover;
+    }
+    .sam li:nth-child(3) {
+      background: url(https://www.samsungshi.com/images/main/mSolution_bg_03.jpg)
+        center/cover;
+    }
+    .sam li:nth-child(4) {
+      background: url(https://www.samsungshi.com/images/main/mSolution_bg_04.jpg)
+        0 / cover;
+    }
+    .sam li .con div > p:nth-child(2) {
+      display: none;
+    }
+    .sam li .con div > a {
+      display: none;
+    }
+    .sam li:hover .con div > p img {
+      display: none;
+    }
+    .sam li:hover .con div > p:nth-child(2) {
+      display: block;
+    }
+    .sam li:hover .con div > a {
+      padding-top: 60px;
+      color: #fff;
+      display: block;
+      text-decoration-line: underline 2px;
+    }
+    .sam li:hover {
+      width: 40%;
+      padding-left: 100px;
+    }
+    .sam li:hover:not(:hover) {
+      width: 630px;
+    }
+  </style>
+  <body>
+    <ul class="sam">
+      <li>
+        <div class="con">
+          <div>
+            <p>제품 | 서비스</p>
+            <p>
+              끊임없는 제품 혁신과<br />
+              엔지니어링 역량 강화
+            </p>
+          </div>
+          <div>
+            <p>
+              <img
+                src="https://www.samsungshi.com/images/main/mSolution_arrow.png"
+                alt="arrow"
+              />
+            </p>
+            <a href="">자세히</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="con">
+          <div>
+            <p>그린 솔루션</p>
+            <p>
+              지구를 위한 조선·해양<br />
+              탄소중립 기술 개발
+            </p>
+          </div>
+          <div>
+            <p>
+              <img
+                src="https://www.samsungshi.com/images/main/mSolution_arrow.png"
+                alt="arrow"
+              />
+            </p>
+            <a href="">자세히</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="con">
+          <div>
+            <p>디지털 솔루션</p>
+            <p>
+              미래 디지털 기술<br />
+              시장 선도
+            </p>
+          </div>
+          <div>
+            <p>
+              <img
+                src="https://www.samsungshi.com/images/main/mSolution_arrow.png"
+                alt="arrow"
+              />
+            </p>
+            <a href="">자세히</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="con">
+          <div>
+            <p>스마트야드 솔루션</p>
+            <p>
+              미래형 조선소로<br />
+              패러다임 전환
+            </p>
+          </div>
+          <div>
+            <p>
+              <img
+                src="https://www.samsungshi.com/images/main/mSolution_arrow.png"
+                alt="arrow"
+              />
+            </p>
+            <a href="">자세히</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </body>
+</html>

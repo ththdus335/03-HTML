@@ -22,17 +22,29 @@
     ul {
       list-style: none;
     }
+    .nav {
+      clear: both;
+      width: 100%;
+      height: 100px;
+      background: #000;
+      opacity: 0.25;
+      position: absolute;
+      padding-left: 210px;
+    }
     .bg {
       width: 1920px;
-      height: ;
+      height: 1080px;
     }
     .main {
-      clear: both;
-      background: url(./images/mountains.png) center/cover fixed;
+      background: url(./images/mountains.png) top / cover fixed;
       overflow: hidden;
       text-align: center;
       color: #fff;
-      padding: 300px 0 300px 0;
+      width: 100%;
+
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
     }
     .main h1 {
       font-family: "BookkMyungjo_Light";
@@ -52,6 +64,9 @@
       line-height: 35px;
     }
 
+    .sb1 {
+      clear: both;
+    }
     .sb1 > p:first-child {
       height: 450px;
       width: 50%;
@@ -65,14 +80,7 @@
       background: #e7e7e7;
       float: right;
     }
-    .nav {
-      width: 100%;
-      height: 100px;
-      background: #000;
-      opacity: 0.25;
-      position: absolute;
-      padding-left: 210px;
-    }
+
     .nav img {
       padding-top: 30px;
       width: 100px;
@@ -96,8 +104,17 @@
       width: 1400px;
     }
     .sb2 ul li {
+      height: 438px;
       float: left;
-      margin: 10px;
+      margin: 0 10px;
+      border: 1px solid #efefef;
+    }
+
+    .sb2 ul li p {
+      background: #536133;
+      box-sizing: border-box;
+      width: 414px;
+      height: 100px;
     }
   </style>
   <body>
@@ -126,11 +143,11 @@
       </h2>
       <ul>
         <li>
-          <img src="./images/sb01.png" alt="sb01" />
+          <img src="./images/oracle/sb_01.png" alt="sb01" />
           <p>필러</p>
         </li>
-        <li><img src="./images/sb02.png" alt="sb02" /></li>
-        <li><img src="./images/sb03.png" alt="sb03" /></li>
+        <li><img src="./images/oracle/sb_02.png" alt="sb02" /></li>
+        <li><img src="./images/oracle/sb_03.png" alt="sb03" /></li>
       </ul>
     </div>
   </body>

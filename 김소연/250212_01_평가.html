@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        background-color: rgb(226, 253, 254);
+      }
+
+      ul {
+        width: 1080px;
+        height: 100px;
+        margin: 0 420px;
+        list-style: none;
+        text-align: center;
+        display: flex;
+      }
+      ul li::after {
+        content: "";
+        width: 1px;
+        height: 100px;
+        background: #b4b4b4;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        position: absolute;
+      }
+      ul li:last-child:after {
+        content: "";
+        height: 0;
+      }
+      ul li {
+        width: 180px;
+        position: relative;
+      }
+
+      ul li:hover img {
+        background: rgba(0, 0, 0, 0.1);
+        border-radius: 70%;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>
+        <p>
+          <img
+            src="https://pc.wooricard.com/dcpc/img/pc/content/ico_quick_menu1.png"
+            alt="card1"
+          />
+        </p>
+        <p>이용대금명세서</p>
+      </li>
+      <li>
+        <img
+          src="https://pc.wooricard.com/dcpc/img/pc/content/ico_quick_menu2.png"
+          alt="card2"
+        />
+        <p>결제예상금액</p>
+      </li>
+      <li>
+        <img
+          src="https://pc.wooricard.com/dcpc/img/pc/content/ico_quick_menu3.png"
+          alt="card4"
+        />
+        <p>이용내역조회</p>
+      </li>
+      <li>
+        <img
+          src="https://pc.wooricard.com/dcpc/img/pc/content/ico_quick_menu5.png"
+          alt="card5"
+        />
+        <p>내정보변경</p>
+      </li>
+      <li>
+        <img
+          src="https://pc.wooricard.com/dcpc/img/pc/content/ico_quick_menu6.png"
+          alt="card6"
+        />
+        <p>카드분실신고</p>
+      </li>
+      <li>
+        <img
+          src="https://pc.wooricard.com/dcpc/img/pc/content/ico_quick_menu1.png"
+          alt="card1"
+        />
+        <p>카드사용등록</p>
+      </li>
+    </ul>
+  </body>
+</html>

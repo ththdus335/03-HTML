@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      ul {
+        width: 1080px;
+        height: 460px;
+        list-style: none;
+        text-align: center;
+        display: flex;
+      }
+
+      ul li {
+        width: 180px;
+        position: relative;
+        padding: 0 48px;
+      }
+
+      ul li img:nth-child(1) {
+        position: absolute;
+        right: -25px;
+        top: 140px;
+      }
+      ul li img:nth-child(2) {
+        padding: 0 0 44px 0;
+      }
+      ul li img:nth-child(2):hover {
+        transform: 0.3s ease-out;
+      }
+      ul li div p {
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>
+        <img
+          src="https://pc.wooricard.com/dcpc/img/pc/content/special_mlon_1_obj.png"
+          alt=""
+        />
+        <img
+          src="https://pc.wooricard.com/dcpc/img/pc/content/special_mlon_1_bg.png"
+          alt="card1"
+        />
+
+        <div>
+          <h2>단기카드대출</h2>
+          <p>(현금서비스)</p>
+          <p>현금이 급할 때 바로 찾아쓰는, 편리한 생활자금 마련방법</p>
+        </div>
+      </li>
+    </ul>
+  </body>
+</html>

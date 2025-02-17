@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      @font-face {
+        font-family: Pretendard-Regular;
+        src: url(./webfonts/Pretendard-Regular.woff);
+        font-family: Pretendard-Bold;
+        src: url(./webfonts/Pretendard-Bold.woff);
+      }
+
+      .pns {
+        margin: 0 auto;
+        width: 1220px;
+        padding-top: 100px;
+      }
+
+      input {
+        display: none;
+      }
+      .con {
+        margin: 0 auto;
+      }
+      .con p {
+        padding-top: 20px;
+        display: none;
+      }
+      .con h2 {
+        display: none;
+      }
+      #menu1:checked ~ .pns .con p:nth-child(1),
+      #menu2:checked ~ .pns .con p:nth-child(2),
+      #menu3:checked ~ .pns .con p:nth-child(3),
+      #menu4:checked ~ .pns .con p:nth-child(4),
+      #menu5:checked ~ .pns .con p:nth-child(5),
+      #menu6:checked ~ .pns .con p:nth-child(6) {
+        display: block;
+      }
+      .nav {
+        width: 1220px;
+        height: 50px;
+        border-bottom: 1px solid #ccc;
+        box-sizing: border-box;
+        display: flex;
+        /* justify-content: space-between; */
+        margin: 0 auto;
+      }
+      .nav label {
+        padding-bottom: 20px;
+        /* padding-right: 100px; */
+        flex: 1;
+      }
+      .nav label:hover,
+      .nav label:checked {
+        box-sizing: border-box;
+        border-bottom: 3px solid #007dc5;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="radio" name="hansol" id="menu1" />
+    <input type="radio" name="hansol" id="menu2" />
+    <input type="radio" name="hansol" id="menu3" />
+    <input type="radio" name="hansol" id="menu4" />
+    <input type="radio" name="hansol" id="menu5" />
+    <input type="radio" name="hansol" id="menu6" />
+
+    <div class="pns">
+      <div class="nav">
+        <label for="menu1">반도체</label>
+        <label for="menu2">전기/전자</label>
+        <label for="menu3">2차 전지</label>
+        <label for="menu4">식음료/제약</label>
+        <label for="menu5">화학</label>
+        <label for="menu6">기계/금속</label>
+      </div>
+      <div class="con">
+        <div>
+          <p>
+            <img
+              src="https://www.hansolpns.com/assets/resources/front/images/contents/smart_factory/industry-01.jpg"
+              alt=""
+            />
+          </p>
+          <div>첫번째 task</div>
+          <div>첫번째 솔루션</div>
+        </div>
+
+        <p>
+          <img
+            src="https://www.hansolpns.com/assets/resources/front/images/contents/smart_factory/industry-02.jpg"
+            alt=""
+          />
+        </p>
+        <p>
+          <img
+            src="https://www.hansolpns.com/assets/resources/front/images/contents/smart_factory/industry-03.jpg"
+            alt=""
+          />
+        </p>
+        <p>
+          <img
+            src="https://www.hansolpns.com/assets/resources/front/images/contents/smart_factory/industry-04.jpg"
+            alt=""
+          />
+        </p>
+        <p>
+          <img
+            src="https://www.hansolpns.com/assets/resources/front/images/contents/smart_factory/industry-05.jpg"
+            alt=""
+          />
+        </p>
+        <p>
+          <img
+            src="https://www.hansolpns.com/assets/resources/front/images/contents/smart_factory/industry-06.jpg"
+            alt=""
+          />
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

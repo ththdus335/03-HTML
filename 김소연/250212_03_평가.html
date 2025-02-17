@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      div {
+        width: 1080px;
+        height: 363px;
+        margin: 0 auto;
+      }
+      ul {
+        list-style: none;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+      }
+      div ul li::after {
+        content: "";
+        width: 1px;
+        height: 170px;
+        background: #b4b4b4;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        position: absolute;
+      }
+      ul li:last-child:after {
+        content: "";
+        height: 0;
+      }
+
+      div ul li {
+        padding: 0 20px;
+        width: 230px;
+        position: relative;
+      }
+      div ul li h1 {
+        font-size: 24px;
+        padding-bottom: 25px;
+      }
+      div > ul > li.woori1 img {
+        transform: translate(-40px, 0px);
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <ul>
+        <li class="woori1">
+          <img
+            src="https://pc.wooricard.com/dcpc/img/pc/content/special_mbnf_1_obj.png"
+            alt="woori1"
+          />
+          <h1>해외이용의 정석</h1>
+          <p>여행,직구, 항공<br />무엇이든 우리카드로</p>
+        </li>
+        <li>
+          <img
+            src="https://pc.wooricard.com/dcpc/img/pc/content/special_mbnf_2_obj.png"
+            alt="woori2"
+          />
+          <h1>MY Pick 서비스</h1>
+          <p>혜택도 맞춤!<br />나만을 위한 맞춤 혜택</p>
+        </li>
+        <li>
+          <img
+            src="https://pc.wooricard.com/dcpc/img/pc/content/special_mbnf_3_obj.png"
+            alt="woori3"
+          />
+          <h1>우리V클럽</h1>
+          <p>특별함을 원하는<br />고객을 위한 VIP우대 혜택</p>
+        </li>
+        <li>
+          <img
+            src="https://pc.wooricard.com/dcpc/img/pc/content/special_mbnf_4_obj.png"
+            alt="woori4"
+          />
+          <h1>해외이용의 정석</h1>
+          <p>여행,직구, 항공<br />무엇이든 우리카드로</p>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

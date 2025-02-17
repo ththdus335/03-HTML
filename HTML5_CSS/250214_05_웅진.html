@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      input {
+        display: none;
+      }
+      .all::before {
+        content: "";
+        position: absolute;
+        top: 390px;
+        left: 220px;
+        width: 20px;
+        height: 20px;
+        border-width: 2px 2px 0px 0px;
+        transform: rotate(-135deg);
+        border-style: solid;
+      }
+      .all::after {
+        content: "";
+        position: absolute;
+        top: 390px;
+        right: 220px;
+        width: 20px;
+        height: 20px;
+        border-width: 2px 2px 0px 0px;
+        transform: rotate(45deg);
+        border-style: solid;
+      }
+      .all {
+        width: 1280px;
+        margin: 0 auto;
+        margin-top: 80px;
+        text-align: center;
+      }
+      .all h1 {
+        font-size: 44px;
+        margin-bottom: 5px;
+      }
+      .con {
+        margin: 50px 0px;
+      }
+      .con label {
+        margin: 0 auto;
+        padding: 0 20px 12px 20px;
+      }
+
+      .pic1 p img,
+      .pic2 p img,
+      .pic3 p img,
+      .pic4 p img,
+      .pic5 p img,
+      .pic6 p img,
+      .pic7 p img,
+      .pic8 p img {
+        width: 218px;
+        height: 218px;
+        object-fit: cover;
+        border: 1px solid #ccc;
+      }
+      .pic9 {
+        margin-top: 80px;
+        display: flex;
+      }
+      .pic9 img {
+        margin-right: 20px;
+      }
+
+      .pic1,
+      .pic2,
+      .pic3,
+      .pic4,
+      .pic5,
+      .pic6,
+      .pic7,
+      .pic8 {
+        display: none;
+      }
+
+      .con label:hover,
+      #wj1:checked ~ .con label:first-child,
+      #wj2:checked ~ .con label:nth-child(2),
+      #wj3:checked ~ .con label:nth-child(3),
+      #wj4:checked ~ .con label:nth-child(4),
+      #wj5:checked ~ .con label:nth-child(5),
+      #wj6:checked ~ .con label:nth-child(6),
+      #wj7:checked ~ .con label:nth-child(7),
+      #wj8:checked ~ .con label:nth-child(8) {
+        color: rgb(113, 178, 0);
+        cursor: pointer;
+        border-bottom: 3px solid rgb(113, 178, 0);
+        font-weight: bold;
+      }
+      #wj1:checked ~ div.pic1,
+      #wj2:checked ~ div.pic2,
+      #wj3:checked ~ div.pic3,
+      #wj4:checked ~ div.pic4,
+      #wj5:checked ~ div.pic5,
+      #wj6:checked ~ div.pic6,
+      #wj7:checked ~ div.pic7,
+      #wj8:checked ~ div.pic8 {
+        display: flex;
+        gap: 45px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="all">
+      <div>
+        <h1>웅진 브랜드</h1>
+        <p>맛있고 건강한 웅진식품 대표 브랜드를 확인해보세요.</p>
+      </div>
+
+      <input type="radio" name="wj" id="wj1" checked />
+      <input type="radio" name="wj" id="wj2" />
+      <input type="radio" name="wj" id="wj3" />
+      <input type="radio" name="wj" id="wj4" />
+      <input type="radio" name="wj" id="wj5" />
+      <input type="radio" name="wj" id="wj6" />
+      <input type="radio" name="wj" id="wj7" />
+      <input type="radio" name="wj" id="wj8" />
+
+      <div class="con">
+        <label for="wj1">주스</label>
+        <label for="wj2">차</label>
+        <label for="wj3">곡물</label>
+        <label for="wj4">어린이</label>
+        <label for="wj5">생수/탄산/이온</label>
+        <label for="wj6">홍삼/건강/드링크</label>
+        <label for="wj7">제과</label>
+        <label for="wj8">해외수입제품</label>
+      </div>
+      <div class="pic1">
+        <p>
+          <img
+            src="https://www.wjfood.co.kr/uploads/brand/988f4c9d-4968-4fff-ac87-bee8bf0ca79d.png"
+            alt="주스1"
+          />
+        </p>
+        <p>
+          <img
+            src="https://www.wjfood.co.kr/uploads/brand/dad9b103-f115-42a0-b0a5-cfd25561c3be.png"
+            alt="주스2"
+          />
+        </p>
+        <p>
+          <img
+            src="https://www.wjfood.co.kr/uploads/brand/ab012b6f-ce24-4d5b-ac20-76541c911f0f.png"
+            alt="주스3"
+          />
+        </p>
+        <p>
+          <img
+            src="https://www.wjfood.co.kr/uploads/brand/a3d59de4-4bcd-4a12-ac0d-1a5608544137.png"
+            alt="주스4"
+          />
+        </p>
+        <p>
+          <img
+            src="https://www.wjfood.co.kr/uploads/brand/a5699127-9db4-4568-9d60-305e0f20009c.png"
+            alt="주스5"
+          />
+        </p>
+      </div>
+      <div class="pic2">
+        <p>
+          <img
+            src="https://www.wjfood.co.kr/uploads/brand/25c76a16-a07f-46b9-b7a4-08d273053a5c.png"
+            alt="주스1"
+          />
+        </p>
+        <p>
+          <img
+            src="https://www.wjfood.co.kr/uploads/brand/e30619e8-fe12-4aa9-ab8c-265f01436e49.png"
+            alt="주스2"
+          />
+        </p>
+        <p>
+          <img
+            src="https://www.wjfood.co.kr/uploads/brand/eafaa3c6-4a4d-4221-b31a-c36e14bfd3f7.png"
+            alt="주스3"
+          />
+        </p>
+        <p>
+          <img
+            src="https://www.wjfood.co.kr/uploads/brand/bf2c7c9a-cd93-4470-b1e3-b0f59e33e6a9.png"
+            alt="주스4"
+          />
+        </p>
+        <p>
+          <img
+            src="https://www.wjfood.co.kr/uploads/brand/17e5ada2-b3ee-4573-928f-91a25c1920b5.png"
+            alt="주스5"
+          />
+        </p>
+      </div>
+      <div class="pic3">
+        <p>
+          <img
+            src="https://www.wjfood.co.kr/uploads/brand/be03c11b-dbac-4ec9-984f-67a2f9772452.png"
+            alt="주스1"
+          />
+        </p>
+      </div>
+      <div class="pic4">
+        <p>
+          <img
+            src="https://www.wjfood.co.kr/uploads/brand/fd015622-9e18-4d71-8d87-c446c80e01cc.png"
+            alt="주스1"
+          />
+        </p>
+        <p>
+          <img
+            src="https://www.wjfood.co.kr/uploads/brand/e75b40f1-12ad-4642-acfd-823845df9283.png"
+            alt="주스2"
+          />
+        </p>
+        <p>
+          <img
+            src="https://www.wjfood.co.kr/uploads/brand/9827e987-5dde-4fd2-9d89-c7a28a4c9618.png"
+            alt="주스3"
+          />
+        </p>
+        <p>
+          <img
+            src="https://www.wjfood.co.kr/uploads/brand/35514abd-8acd-45ac-8660-3175bd56bdc1.png"
+            alt="주스4"
+          />
+        </p>
+        <p>
+          <img
+            src="https://www.wjfood.co.kr/uploads/brand/d6fabdcd-a8b9-4ce9-b461-ec0882658233.png"
+            alt="주스5"
+          />
+        </p>
+      </div>
+      <div class="pic5">
+        <p>
+          <img
+            src="https://www.wjfood.co.kr/uploads/brand/e12c803a-aa7a-45a0-bb5f-7cbc53621087.png"
+            alt="주스1"
+          />
+        </p>
+        <p>
+          <img
+            src="https://www.wjfood.co.kr/uploads/brand/4b9a2a4c-a257-48a8-b4da-f63bbd4fe651.png"
+            alt="주스2"
+          />
+        </p>
+        <p>
+          <img
+            src="https://www.wjfood.co.kr/uploads/brand/7507b95a-e5fc-474d-b254-8f76f0fffa7f.png"
+            alt="주스3"
+          />
+        </p>
+        <p>
+          <img
+            src="https://www.wjfood.co.kr/uploads/brand/f4c90fe7-a1db-4c32-b804-677066facc82.png"
+            alt="주스4"
+          />
+        </p>
+      </div>
+      <div class="pic6">
+        <p>
+          <img
+            src="https://www.wjfood.co.kr/uploads/brand/101db18c-d5b8-4c0b-b401-bdae05dec587.png"
+            alt="주스1"
+          />
+        </p>
+        <p>
+          <img
+            src="https://www.wjfood.co.kr/uploads/brand/68a17608-0532-4e7a-89bf-5e002b5fdfe5.png"
+            alt="주스2"
+          />
+        </p>
+        <p>
+          <img
+            src="https://www.wjfood.co.kr/uploads/brand/8b60c790-47e2-4e46-85ac-7fd95a192a7b.png"
+            alt="주스3"
+          />
+        </p>
+        <p>
+          <img
+            src="https://www.wjfood.co.kr/uploads/brand/d1cec35e-a60c-4aef-962f-9f3a2ba497e5.png"
+            alt="주스4"
+          />
+        </p>
+        <p>
+          <img
+            src="https://www.wjfood.co.kr/uploads/brand/7189de5b-92ca-4a6b-8b7e-080b43fae7ff.png"
+            alt="주스4"
+          />
+        </p>
+      </div>
+      <div class="pic7">
+        <p>
+          <img
+            src="https://www.wjfood.co.kr/uploads/brand/ebf54189-0e17-4376-89ce-842511533d2d.png"
+            alt="주스1"
+          />
+        </p>
+      </div>
+      <div class="pic8">
+        <p>
+          <img
+            src="https://www.wjfood.co.kr/uploads/brand/4733126d-f06f-47b5-ab27-1944b7a540e6.png"
+            alt="주스1"
+          />
+        </p>
+      </div>
+      <div>
+        <div class="pic9">
+          <p>
+            <img
+              src="https://www.wjfood.co.kr/uploads/main//598f084e-f2c6-43d0-9065-aab24170cc1e.png"
+              alt=""
+            />
+          </p>
+          <p>
+            <img
+              src="https://www.wjfood.co.kr/uploads/main//21e22e89-deee-43d9-bf0d-5703e2fabe72.png"
+              alt=""
+            />
+          </p>
+          <p>
+            <img
+              src="https://www.wjfood.co.kr/uploads/main//1cbb24c1-e03d-4b0d-9893-9c3b3b1f417d.png"
+              alt=""
+            />
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

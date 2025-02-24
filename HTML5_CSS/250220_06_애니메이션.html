@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        text-align: center;
+      }
+      p {
+        width: 0;
+        height: 0;
+        margin: 100px auto;
+        border: 10px solid #000;
+        border-right: none;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+        animation-name: move;
+        animation-timing-function: linear;
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+
+      label {
+        border: 1px solid #000;
+        border-radius: 100px;
+        padding: 4px 20px;
+      }
+      @keyframes move {
+        0% {
+          transform: translate(0, 0);
+        }
+        100% {
+          transform: translate(10px, 0);
+        }
+      }
+
+      #stop:checked ~ p {
+        animation-play-state: paused;
+      }
+      #start:checked ~ label:first-of-type,
+      #stop:checked ~ label:nth-of-type(2) {
+        background-color: #000;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="radio" name="move" id="start" checked />
+    <input type="radio" name="move" id="stop" />
+
+    <p></p>
+
+    <label for="start">start</label>
+    <label for="stop">stop</label>
+  </body>
+</html>

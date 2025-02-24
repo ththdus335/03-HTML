@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      p {
+        margin: 0;
+        width: 150px;
+        height: 150px;
+        animation-name: move;
+        animation-duration: 1s;
+        animation-delay: 0.5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        position: relative;
+        animation-timing-function: ease-in;
+        background: rgb(53, 25, 25);
+        border-radius: 100%;
+        color: rgb(255, 161, 242);
+        text-align: center;
+        line-height: 140px;
+        font-size: 25px;
+      }
+
+      @keyframes move {
+        0% {
+          bottom: 0;
+        }
+        100% {
+          bottom: -500px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <p></p>
+  </body>
+</html>

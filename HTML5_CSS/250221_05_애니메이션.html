@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        margin: 0 auto;
+        background-color: #f7f8fc;
+      }
+      .top {
+        display: flex;
+        margin: 0 18%;
+      }
+      .con {
+        width: 1200px;
+        height: 293px;
+        flex: 1;
+        margin-top: 300px;
+        margin-left: 24px;
+        padding: 32px 32px;
+        border: 1px solid rgb(229, 229, 229);
+        border-radius: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #fff;
+        transition: 0.3s;
+      }
+      .con:first-child {
+        margin-left: 0;
+      }
+      .con .move {
+        width: 120px;
+        height: 120px;
+        background: url(./images/신한카드/img01.png);
+      }
+      .con:hover .move {
+        background: url(./images/신한카드/img01_bg.png);
+        animation: ani 5s steps(91) infinite;
+      }
+      .con .move2 {
+        width: 120px;
+        height: 120px;
+        background: url(./images/신한카드/img02.png);
+      }
+      .con:hover .move2 {
+        background: url(./images/신한카드/img02_bg.png);
+        animation: ani2 5s steps(92) infinite;
+      }
+      .con .move3 {
+        width: 120px;
+        height: 120px;
+        background: url(./images/신한카드/img03.png);
+        animation: ani 5s steps(91) infinite;
+      }
+      .con:hover .move3 {
+        background: url(./images/신한카드/img03_bg.png);
+        animation: ani 5s steps(91) infinite;
+      }
+      .con .move4 {
+        width: 120px;
+        height: 120px;
+        background: url(./images/신한카드/img04.png);
+        animation: ani 5s steps(91) infinite;
+      }
+      .con:hover .move4 {
+        background: url(./images/신한카드/img04_bg.png);
+        animation: ani 5s steps(91) infinite;
+      }
+      .con h1 {
+        width: 210px;
+        font-size: 20px;
+      }
+      .con h1 span {
+        font-size: 24px;
+      }
+      .top .con .txt {
+        background: #f1f4fb;
+        padding: 8px 0;
+        width: 216px;
+        text-align: center;
+        border-radius: 100px;
+      }
+      .con:hover .txt {
+        background-color: #fff;
+      }
+      .con:hover {
+        border-color: #007aff;
+        animation: up 0.2s linear;
+        background-color: #f7f8fc;
+        transform: translateY(-50px);
+      }
+
+      @keyframes ani {
+        0% {
+          background-position: 0 0;
+        }
+        100% {
+          background-position: -10920px 0;
+        }
+      }
+      @keyframes ani2 {
+        0% {
+          background-position: 0 0;
+        }
+        100% {
+          background-position: -11040px 0;
+        }
+      }
+      /* @keyframes up {
+        0% {
+          transform: translateY(0);
+        }
+        100% {
+          transform: translateY(-50px);
+        }
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="top">
+      <div class="con">
+        <h1>다양한<br /><span>Data서비스</span></h1>
+        <p class="move"></p>
+        <div class="txt"><p>Data One-Stop Service</p></div>
+      </div>
+      <div class="con">
+        <h1>
+          혁신적인
+
+          <br /><span>솔루션서비스</span>
+        </h1>
+        <p class="move2"></p>
+        <div class="txt"><p>상권분석, 시장 모니터링</p></div>
+      </div>
+      <div class="con">
+        <h1>
+          스마트한
+          <br /><span>광고서비스</span>
+        </h1>
+        <p class="move3"></p>
+        <div class="txt"><p>최적의 고객 타겟팅</p></div>
+      </div>
+      <div class="con">
+        <h1>탁월한 <br /><span>API서비스</span></h1>
+        <p class="move4"></p>
+        <div class="txt"><p>Data 실시간 활용</p></div>
+      </div>
+    </div>
+  </body>
+</html>

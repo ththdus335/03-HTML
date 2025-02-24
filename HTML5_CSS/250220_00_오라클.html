@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        overflow: hidden;
+      }
+      .head {
+        /* width: 100%; */
+        height: 100vh;
+        position: relative;
+        left: 0;
+        top: 0;
+      }
+      .head .bg {
+        width: 100%;
+        height: 100%;
+      }
+      .head .bg video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(80%);
+      }
+      .con {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 500px;
+        justify-content: center;
+      }
+      div.txt {
+        display: flex;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .con h1 {
+        font-size: 62px;
+        letter-spacing: -2px;
+        color: #fff;
+        font-weight: bold;
+        text-align: center;
+      }
+      .con p {
+        display: flex;
+        text-align: center;
+        font-size: 18px;
+        color: #fff;
+        justify-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="head">
+      <div class="bg">
+        <video
+          controls
+          autoplay
+          muted
+          loop
+          src="./images/203449-921267347_medium.mp4"
+        ></video>
+      </div>
+
+      <div class="con">
+        <img src="./images/oracle.png" alt="로고" />
+
+        <div class="txt">
+          <h1>
+            피부시술은 의료진의 실력도 중요하지만<br />장비도 좋아야 합니다
+          </h1>
+          <p>
+            대전둔산동 오라클피부과는 고객님의 아름다움을 위해 장비와 시술 에
+            대한 투자를 아끼지 않고 있으며<br />
+            현재 운영중인 수십 여종의 장비는 여러 기관에서 인정받은 고효율
+            의료기기로,<br />
+            보다나은 의료서비스를 통해 고객 여러분의 믿음에 보답하도록
+            하겠습니다.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

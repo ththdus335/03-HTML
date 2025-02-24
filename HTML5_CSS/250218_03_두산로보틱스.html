@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        overflow: hidden;
+      }
+      .bg {
+        height: 100vh;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 0;
+        z-index: -1;
+      }
+      .bg video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(20%);
+      }
+      .con {
+        display: flex;
+        flex-direction: column;
+        padding-top: 270px;
+        /* align-items: center; */
+      }
+      .con h1 {
+        font-size: 68px;
+        letter-spacing: -2px;
+        color: #fff;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      .con p {
+        display: flex;
+        text-align: center;
+        font-size: 18px;
+        color: #fff;
+        justify-items: center;
+      }
+      div.txt {
+        display: flex;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: space-around;
+        width: 360px;
+        height: 70px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 35px;
+        padding: 0 30px;
+        margin-top: 60px;
+      }
+      div.txt p {
+        display: flex;
+        align-items: center;
+      }
+      div.txt p img {
+        display: flex;
+        width: 24px;
+      }
+      div.txt p:nth-child(2) {
+        padding-left: 20px;
+      }
+      div.txt:hover {
+        background: rgba(255, 255, 255, 1);
+      }
+      div.txt:hover p {
+        color: #333;
+      }
+      div.txt:hover p img {
+        filter: invert();
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg">
+      <video
+        controls
+        autoplay
+        muted
+        loop
+        src="https://www.doosanrobotics.com/media/visual-1.mp4"
+      ></video>
+    </div>
+
+    <div class="con">
+      <h1>
+        <span
+          >Innovation In Every Motion, <br />Revolutionizing the Way You
+          Work</span
+        >
+      </h1>
+      <div class="txt">
+        <p>두산 로봇과 함께 상상을 실현해 보세요</p>
+        <p>
+          <img
+            src="https://www.doosanrobotics.com/images/arrow-right-light.svg"
+            alt=""
+          />
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

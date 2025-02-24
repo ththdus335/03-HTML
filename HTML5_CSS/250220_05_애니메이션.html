@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        text-align: center;
+      }
+      div.pp p {
+        background-image: url(./images/pipe.png);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        margin-top: 20px;
+        padding-bottom: 200px;
+      }
+
+      div.pp p img {
+        margin-top: 100px;
+        animation-name: turn;
+        animation-timing-function: linear;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+      }
+      @keyframes turn {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      label {
+        border: 1px solid #000;
+        background: #fff;
+        border-radius: 100px;
+        margin: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+      #left:checked ~ label:first-of-type,
+      #right:checked ~ label:nth-of-type(2),
+      #off:checked ~ label:nth-of-type(3) {
+        background-color: #000;
+        color: #fff;
+      }
+      #left:checked ~ .pp p img {
+        animation-direction: reverse;
+      }
+      #off:checked ~ .pp p img {
+        animation-play-state: paused;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="radio" name="cc" id="left" />
+    <input type="radio" name="cc" id="right" checked />
+    <input type="radio" name="cc" id="off" />
+
+    <div class="pp">
+      <p><img src="./images/propeller.png" alt="" /></p>
+    </div>
+    <label for="left">Turn Left</label>
+    <label for="right">Turn Right</label>
+    <label for="off">Off</label>
+  </body>
+</html>

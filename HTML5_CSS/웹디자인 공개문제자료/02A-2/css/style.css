@@ -1,0 +1,114 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+body {
+  font-family: Arial, 돋움, Dotum, sans-serif;
+}
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(6, 200px);
+  grid-template-rows: 100px 300px 200px 100px;
+  grid-template-areas:
+    "logo menu menu menu menu menu"
+    "slide slide slide slide slide slide"
+    "notice notice gallery gallery banner banner"
+    "ftlogo copy copy copy copy site";
+}
+
+.wrap .logo {
+  grid-area: logo;
+}
+.wrap .menu {
+  grid-area: menu;
+  position: relative;
+}
+.wrap .menu > ul {
+  display: flex;
+  width: 800px;
+  height: 50px;
+  position: relative;
+  top: 50px;
+  left: 200px;
+}
+.wrap .menu > ul > li {
+  width: 25%;
+  line-height: 50px;
+  border: 1px solid #333;
+  border-right: none;
+  text-align: center;
+  transition: 1s;
+}
+.wrap .menu > ul > li:last-child {
+  border-right: 1px solid #333;
+}
+.wrap .menu > ul li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.wrap .menu > ul li .sub {
+  width: 100%;
+  height: 0;
+  background-color: #000;
+  transition: 0.5s;
+  z-index: 1;
+}
+.wrap .menu > ul li .sub a {
+  color: #fff;
+}
+.wrap .menu > ul:hover > li .sub {
+  height: 150px;
+}
+.wrap .menu > ul > li:hover > a {
+  background: #000;
+  color: #fff;
+}
+.wrap .menu > ul > li .sub li a:hover {
+  background: #fff;
+  color: #000;
+}
+
+.wrap .menu .bg {
+  /* background-color: #000; */
+  width: 1200px;
+  height: 0px;
+  left: -200px;
+  top: 100px;
+  position: absolute;
+  transition: 1s;
+}
+.wrap .menu > ul:hover ~ .bg {
+  height: 150px;
+}
+.wrap .slide {
+  grid-area: slide;
+}
+.wrap .notice {
+  grid-area: notice;
+}
+.wrap .gallery {
+  grid-area: gallery;
+}
+.wrap .banner {
+  grid-area: banner;
+}
+.wrap .ftlogo {
+  grid-area: ftlogo;
+}
+.wrap .copy {
+  grid-area: copy;
+}
+.wrap .site {
+  grid-area: site;
+}

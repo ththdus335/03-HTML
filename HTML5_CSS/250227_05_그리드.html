@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .grid-container1 {
+        display: grid;
+        width: 1200px;
+        margin: 0 auto;
+        grid-template-columns: repeat(6, 200px);
+        grid-template-areas:
+          "toplogo menu menu menu menu menu"
+          "slide slide slide slide slide slide"
+          "notice notice banner banner go go"
+          "footlogo footmenu footmenu footmenu footmenu footmenu"
+          "footlogo copyright copyright copyright copyright copyright";
+        grid-template-rows: 100px 300px 200px 50px 50px;
+      }
+
+      .toplogo {
+        grid-area: toplogo;
+        background: #aaa;
+      }
+      .menu {
+        background: #bbb;
+        grid-area: menu;
+      }
+      .slide {
+        background: #ccc;
+        grid-area: slide;
+      }
+      .notice {
+        background: #ddd;
+        grid-area: notice;
+      }
+      .banner {
+        background: #aaa;
+        grid-area: banner;
+      }
+      .go {
+        background: #bbb;
+        grid-area: go;
+      }
+      .footlogo {
+        background: #ccc;
+        grid-area: footlogo;
+      }
+      .footmenu {
+        background: #ddd;
+        grid-area: footmenu;
+      }
+      .copyright {
+        background: #aaa;
+        grid-area: copyright;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container1">
+      <div class="toplogo">logo</div>
+      <div class="menu">menu</div>
+      <div class="slide">slide</div>
+      <div class="notice">공지사항/갤러리</div>
+      <div class="banner">배너</div>
+      <div class="go">바로가기</div>
+      <div class="footlogo">logo</div>
+      <div class="footmenu">menu</div>
+      <div class="copyright">copyright</div>
+    </div>
+  </body>
+</html>

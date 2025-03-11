@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background: url(http://caffebene.co.kr/uploads/banner/20241128813084.jpg)
+          top no-repeat;
+      }
+
+      header .top .logo a {
+        display: block;
+        width: 100%;
+        height: 64px;
+        background: url(http://caffebene.co.kr/images/common/logo.png) no-repeat;
+        display: flex;
+        justify-content: center;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        color: rgb(68, 68, 68);
+      }
+      header {
+        background-color: #fff;
+        position: relative;
+        min-width: 1920px;
+        text-transform: uppercase;
+      }
+      header .top {
+        width: 1190px;
+        height: 123px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+      }
+      header .top .logo {
+        width: 132px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
+
+      nav > ul {
+        display: flex;
+        height: 100%;
+        align-items: center;
+      }
+      nav > ul > li {
+        position: relative;
+      }
+      nav > ul > li > a {
+        font-size: 14px;
+        padding: 0 30px 0 30px;
+        font-weight: 500;
+      }
+
+      nav > ul > li .sub {
+        position: absolute;
+        width: 100%;
+        top: 80px;
+        text-align: center;
+        z-index: 999;
+        height: 0;
+        overflow: hidden;
+      }
+      nav > ul > li .sub li a {
+        line-height: 40px;
+      }
+      nav > ul > li .sub li a:hover {
+        text-decoration-line: underline;
+        font-weight: bold;
+      }
+      nav > ul:hover > li .sub {
+        height: 240px;
+        padding: 20px 0;
+      }
+
+      .bg {
+        position: absolute;
+        width: 100%;
+        height: 0;
+        background: #f2f2f2e6;
+        left: 0%;
+      }
+      nav > ul:hover ~ .bg {
+        height: 300px;
+      }
+      header .top .lag span::after {
+        content: "";
+        width: 1px;
+        height: 3px;
+        top: 0;
+        right: 30;
+        color: #333;
+        position: absolute;
+      }
+
+      header .top .bt {
+        width: 133px;
+        height: 20px;
+        background: rgb(0, 165, 177);
+        text-align: center;
+        margin-top: 55px;
+        border-radius: 100px;
+        padding: 8px 0;
+        line-height: 17px;
+      }
+      header .top .bt a {
+        color: #fff;
+      }
+      header .top nav > ul > li {
+        margin-top: 20px;
+      }
+      header .top nav > ul > li:hover {
+        color: #3a466a;
+      }
+      header .top nav > ul > li:hover .sub li a {
+        color: #3a466a;
+      }
+    </style>
+  </head>
+  <body></body>
+</html>
+<header>
+  <div class="top">
+    <div class="logo"><a href="#"></a></div>
+    <nav>
+      <ul>
+        <li>
+          <a href="#">Caffebene</a>
+          <ul class="sub">
+            <li><a href="#">브랜드 스토리</a></li>
+            <li><a href="#">베네캣 스토리</a></li>
+            <li><a href="#">카페베네 원두</a></li>
+            <li><a href="#">카페베네 소식</a></li>
+            <li><a href="#">매거진</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Menu</a>
+          <ul class="sub">
+            <li><a href="#">신메뉴</a></li>
+            <li><a href="#">커피</a></li>
+            <li><a href="#">음료</a></li>
+            <li><a href="#">푸드</a></li>
+            <li><a href="#">MD상품</a></li>
+            <li><a href="#">Retail</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Store</a>
+          <ul class="sub">
+            <li><a href="#">국내</a></li>
+            <li><a href="#">해외</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Membership</a>
+          <ul class="sub">
+            <li><a href="#">등급&혜택</a></li>
+            <li><a href="#">가입방법안내</a></li>
+            <li><a href="#">서비스</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Global</a>
+          <ul class="sub">
+            <li><a href="#">해외매장안내</a></li>
+            <li><a href="#"> 해외사업소개</a></li>
+            <li><a href="#">해외가맹&유통문의</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Contents</a>
+          <ul class="sub">
+            <li><a href="#">커피</a></li>
+            <li><a href="#"> 우리동네</a></li>
+            <li><a href="#">사람들</a></li>
+            <li><a href="#">메뉴</a></li>
+            <li><a href="#">이벤트</a></li>
+            <li><a href="#">매장</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="bg"></div>
+    </nav>
+    <!-- <div class=""><span>KR EN</span></div> -->
+    <div class="bt"><a href="#">가맹문의</a></div>
+  </div>
+</header>

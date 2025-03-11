@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>김소연신세계식품</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .wrap {
+        margin: 0 auto;
+        padding: 150px 10px 0 10px;
+        max-width: 1280px;
+      }
+      .wrap .txt h1 {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 40px;
+        padding-bottom: 49px;
+        position: relative;
+      }
+      .wrap .txt h1::after {
+        content: "";
+        position: absolute;
+        width: 120px;
+        height: 4px;
+        background-color: #000;
+        top: 99%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .wrap .txt p {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 22px;
+        margin-top: 45px;
+      }
+      .wrap .con {
+        display: flex;
+        width: 100%;
+        max-width: 1280px;
+        margin-top: 130px;
+        gap: 40px;
+        flex-wrap: wrap;
+      }
+      .wrap .con p {
+        border-radius: 40px;
+        flex: 1 1 40%;
+      }
+      .wrap .con .poto1 {
+        padding-top: 30%;
+        background: url(https://www.shinsegaefood.com/images/business/business_item_hotelCollection.jpg)
+          center/cover;
+      }
+      .wrap .con .poto2 {
+        padding-top: 30%;
+        background: url(https://www.shinsegaefood.com/images/business/business_item_vecchiaEnuovo.jpg)
+          center/cover;
+      }
+      .wrap .con .poto3 {
+        padding-top: 30%;
+        background: url(https://www.shinsegaefood.com/images/business/business_item_olbaan.jpg)
+          center/cover;
+      }
+      .wrap .con .poto4 {
+        padding-top: 30%;
+        background: url(https://www.shinsegaefood.com/images/business/business_item_ywe.jpg)
+          center/cover;
+      }
+      .wrap .con .poto5 {
+        padding-top: 30%;
+        background: url(https://www.shinsegaefood.com/images/business/business_item_betterMeat.jpg)
+          center/cover;
+      }
+      .wrap .con .poto6 {
+        padding-top: 30%;
+        background: url(https://www.shinsegaefood.com/images/business/business_item_brand.jpg)
+          center/cover;
+      }
+      .wrap .con .poto7 {
+        padding-top: 30%;
+        background: url(https://www.shinsegaefood.com/images/business/business_item_recette.jpg)
+          center/cover;
+      }
+
+      @media screen and (max-width: 960px) {
+        .wrap .con p {
+          border-radius: 20px;
+        }
+        .wrap {
+          padding: 40px 15px 0 15px;
+        }
+        .wrap .con {
+          gap: 10px;
+          margin-top: 40px;
+        }
+        .wrap .txt h1 {
+          font-size: 20px;
+          padding-bottom: 30px;
+        }
+        .wrap .txt p {
+          font-size: 15px;
+        }
+        .wrap .txt br {
+          display: none;
+        }
+        .wrap .txt h1::after {
+          display: none;
+        }
+        .wrap .txt p {
+          margin-top: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="txt">
+        <h1>생활 속에서 함께하는<br />식품 제조 선도 기업</h1>
+        <p>
+          신세계푸드는 글로벌 수준의 R&D센터와 식품 제조 인프라를 갖추고
+          있습니다.<br />
+          프리미엄 가정 간편식, 베이커리, Fresh Food, 대안식품 등을<br />
+          직접 연구개발 및 생산하며 식품시장을 선도해 가고 있습니다.
+        </p>
+      </div>
+      <div class="con">
+        <p class="poto1"></p>
+        <p class="poto2"></p>
+        <p class="poto3"></p>
+        <p class="poto4"></p>
+        <p class="poto5"></p>
+        <p class="poto6"></p>
+        <p class="poto7"></p>
+        <p></p>
+      </div>
+    </div>
+  </body>
+</html>

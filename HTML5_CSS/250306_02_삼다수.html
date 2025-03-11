@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        width: 1920px;
+        margin: 0 auto;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .wrap {
+        position: relative;
+        margin: 0 auto;
+      }
+      .ss1 {
+        padding: 150px;
+        height: 960px;
+        background: url(https://www.jpdc.co.kr/pub/site/samdasoo/new_images/bg_W.png);
+      }
+      .ss2 {
+        padding: 150px;
+        height: 960px;
+        background: url(https://www.jpdc.co.kr/pub/site/samdasoo/new_images/bg_B.png);
+      }
+      .ss3 {
+        padding: 150px;
+        height: 960px;
+        background: url(https://www.jpdc.co.kr/pub/site/samdasoo/new_images/bg_G.png);
+      }
+      .txt1 {
+        position: relative;
+        text-align: center;
+      }
+      .txt1 p:first-of-type {
+        font-size: 30px;
+        font-weight: bold;
+        color: rgb(0, 102, 255);
+      }
+      .txt1 p:last-of-type {
+        font-size: 18px;
+        color: rgb(119, 119, 119);
+      }
+      .txt2,
+      .txt3 {
+        opacity: 0;
+        position: relative;
+        text-align: center;
+      }
+      .txt2 p:first-of-type,
+      .txt3 p:first-of-type {
+        font-size: 30px;
+        font-weight: bold;
+        color: #fff;
+      }
+      .txt2 p:last-of-type,
+      .txt3 p:last-of-type {
+        font-size: 18px;
+        color: #fff;
+      }
+      .bt {
+        width: 1920px;
+        height: 550px;
+        position: fixed;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .bt img {
+        width: 230px;
+        height: 600px;
+      }
+      .bg {
+        padding-top: 80px;
+        margin: 0 auto;
+        width: 1320px;
+        text-align: center;
+      }
+      .bg img:last-of-type {
+        position: relative;
+        margin-top: 20px;
+      }
+      .ss2:hover > .txt2 {
+        animation: ani 1s linear;
+        animation-fill-mode: forwards;
+      }
+      .ss3:hover > .txt3 {
+        animation: ani 1s linear;
+      }
+      @keyframes ani {
+        0% {
+          transform: translateY(0);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(30px);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="ss1">
+        <div class="txt1">
+          <p>THE WATER</p>
+          <p>깨끗하고, 건강하고, 맛있는 물</p>
+        </div>
+        <div class="bt">
+          <img
+            src="	https://www.jpdc.co.kr/pub/site/samdasoo/new_images/samdasoo.png"
+            alt=""
+          />
+        </div>
+        <div class="bg">
+          <img
+            src="https://www.jpdc.co.kr/pub/site/samdasoo/new_images/BETTER.png"
+            alt=""
+          />
+          <img
+            src="https://www.jpdc.co.kr/pub/site/samdasoo/new_images/CHOICE.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="ss2">
+        <div class="txt2">
+          <p>ONLY ONE</p>
+          <p>진정한 제주다움 실현</p>
+        </div>
+
+        <div class="bg">
+          <img
+            src="https://www.jpdc.co.kr/pub/site/samdasoo/new_images/JEJU.png"
+            alt=""
+          />
+          <img
+            src="https://www.jpdc.co.kr/pub/site/samdasoo/new_images/SAMDASOO_T.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="ss3">
+        <div class="txt3">
+          <p>SUSTAINABLE</p>
+          <p>제주의 청정 자연과 공존하는 제주삼다수</p>
+        </div>
+
+        <div class="bg">
+          <img
+            src="https://www.jpdc.co.kr/pub/site/samdasoo/new_images/ECO.png"
+            alt=""
+          />
+          <img
+            src="https://www.jpdc.co.kr/pub/site/samdasoo/new_images/FRIENDLY.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

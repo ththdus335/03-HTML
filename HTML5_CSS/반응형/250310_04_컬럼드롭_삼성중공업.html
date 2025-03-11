@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      #wrap {
+        padding: 0 3vw;
+        padding-top: 100px;
+        height: 205px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 1720px;
+        margin: 0 auto;
+      }
+      #wrap > .con1:after,
+      #wrap > .con2:after {
+        content: "";
+        position: absolute;
+        right: -40px;
+        top: 0;
+        width: 1px;
+        height: 100%;
+        background-color: #ddd;
+      }
+      #wrap > div:first-child,
+      #wrap > div:nth-child(2),
+      #wrap > div:nth-child(3) {
+        position: relative;
+        display: flex;
+        width: 30%;
+        height: 100%;
+        justify-content: center;
+      }
+
+      #wrap > div:first-child .txt,
+      #wrap > div:nth-child(2) .txt,
+      #wrap > div:nth-child(3) .txt {
+        flex: 1;
+        word-break: keep-all;
+      }
+      #wrap > div .txt p:last-child {
+        margin-top: 40px;
+      }
+      #wrap > div .txt p:last-child a {
+        text-decoration: none;
+        text-align: center;
+        border-bottom: 3px solid #111;
+        padding: 0 10px 3px 10px;
+        color: #000;
+      }
+      @media screen and (max-width: 1280px) {
+        #wrap > div:nth-child(1) {
+          justify-content: center;
+          width: 48%;
+        }
+        #wrap > div:nth-child(2) {
+          justify-content: center;
+          width: 48%;
+        }
+        #wrap > div:nth-child(3) {
+          width: 100%;
+        }
+        #wrap > .con1:after {
+          content: "";
+          position: absolute;
+          right: -20px;
+          top: 0;
+          width: 1px;
+          height: 100%;
+          background-color: #ddd;
+        }
+        #wrap > .con2:after {
+          content: "";
+          display: none;
+        }
+        #wrap > .con3:after {
+          content: "";
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: 100%;
+          height: 1px;
+          background-color: #ddd;
+        }
+      }
+      @media screen and (max-width: 840px) {
+        #wrap .con1 p img,
+        #wrap .con2 p img,
+        #wrap .con3 p img {
+          width: 80%;
+        }
+        #wrap > div:nth-child(1) {
+          width: 100%;
+        }
+        #wrap > div:nth-child(2) {
+          width: 100%;
+        }
+        #wrap > div:nth-child(3) {
+          width: 100%;
+        }
+      }
+      #wrap .con1 p img,
+      #wrap .con2 p img,
+      #wrap .con3 p img {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <div class="con1">
+        <div class="txt">
+          <h1>오픈소싱</h1>
+          <p>
+            내부 심의를 통해 선정된 업체는 당사의 아웃소싱 데이터베이스로
+            관리합니다.
+          </p>
+          <p><a href="#">더보기</a></p>
+        </div>
+        <p>
+          <img
+            src="https://www.samsungshi.com/images/main/icon_source.png"
+            alt=""
+          />
+        </p>
+      </div>
+      <div class="con2">
+        <div class="txt">
+          <h1>방문신청</h1>
+          <p>
+            협력업체 지원신청, 출입 예약 시스템으로 편리한 방문신청이
+            가능합니다.
+          </p>
+          <p><a href="#">더보기</a></p>
+        </div>
+        <p>
+          <img
+            src="	https://www.samsungshi.com/images/main/icon_visit.png"
+            alt=""
+          />
+        </p>
+      </div>
+      <div class="con3">
+        <div class="txt">
+          <h1>윤리경영/제보</h1>
+          <p>
+            임직원의 불공정한 업무처리 및 비리에 대한 제보를 받으며, 비공개
+            방식으로 처리됩니다.
+          </p>
+          <p><a href="#">더보기</a></p>
+        </div>
+        <p>
+          <img
+            src="	https://www.samsungshi.com/images/main/icon_suggest.png"
+            alt=""
+          />
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shifter</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      #box {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1400px;
+      }
+      #box h1 {
+        padding: 30px;
+        text-align: center;
+        font-size: 50px;
+      }
+      ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: space-around;
+      }
+      ul li {
+        display: flex;
+        justify-content: space-between;
+        flex: 0 1 30%;
+        padding: 45px 0;
+        font-size: 25px;
+      }
+      ul li p:nth-child(2) {
+        font-weight: bold;
+      }
+      ul li:nth-child(1),
+      ul li:nth-child(2),
+      ul li:nth-child(3) {
+        border-bottom: 4px solid;
+      }
+
+      @media screen and (max-width: 768px) {
+        #box h1 {
+          font-size: 40px;
+        }
+        ul li {
+          flex: 0 1 47%;
+          border-bottom: 4px solid;
+          padding: 36px 0;
+          font-size: 20px;
+        }
+      }
+      @media screen and (max-width: 640px) {
+        ul li {
+          text-align: center;
+          flex-direction: column;
+          padding: 24px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box">
+      <h1>삼성중공업 주식회사</h1>
+      <ul class="con">
+        <li>
+          <p>대표이사</p>
+          <p>최성안</p>
+        </li>
+        <li>
+          <p>창립일</p>
+          <p>1974년 8월 5일</p>
+        </li>
+        <li>
+          <p>종업원수</p>
+          <p>9,640명</p>
+        </li>
+        <li>
+          <p>자본금</p>
+          <p>8,801억원</p>
+        </li>
+        <li>
+          <p>매출액</p>
+          <p>79,072억원</p>
+        </li>
+        <li>
+          <p>총자산</p>
+          <p>158,920억원</p>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      a {
+        text-decoration: none;
+        color: #333;
+      }
+      ul {
+        width: 100%;
+        max-width: 1520px;
+        box-sizing: border-box;
+        padding: 0 20px;
+        margin: 0 auto;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+      }
+      ul > li > p {
+        font-size: 0;
+      }
+      ul li p img {
+        object-fit: cover;
+        border-radius: 10px;
+      }
+      ul li:nth-child(odd) {
+        gap: 104px;
+        display: flex;
+        justify-content: flex-start;
+      }
+      ul li:nth-child(even) {
+        gap: 104px;
+        display: flex;
+        justify-content: flex-end;
+        text-align: right;
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        letter-spacing: -1px;
+      }
+      div p {
+        font-size: 24px;
+        color: #777;
+        margin-bottom: 8px;
+      }
+      div h1 {
+        font-size: 48px;
+        font-weight: normal;
+      }
+      div h2 {
+        font-size: 48px;
+        color: #ffc72c;
+      }
+      @media screen and (max-width: 1300px) {
+        ul li p img {
+          flex-shrink: 1;
+        }
+        div {
+          flex-shrink: 0;
+        }
+      }
+      @media screen and (max-width: 750px) {
+        ul {
+          padding: 0 24px;
+          width: 100%;
+          max-width: 750px;
+        }
+        ul li {
+          flex-direction: column;
+        }
+        ul li:nth-child(even) {
+          width: 100%;
+          flex-direction: column-reverse;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>
+        <p>
+          <img
+            src="https://company.ybtour.co.kr/images/bg/bg_story_1.jpg"
+            alt=""
+          />
+        </p>
+        <div>
+          <p>여행의 새로운 가치를 알립니다</p>
+          <h1>가치를 전달하는 여행</h1>
+          <h2>Value-Creating</h2>
+        </div>
+      </li>
+      <li>
+        <div>
+          <p>고객의, 고객에 의한, 고객을 위한</p>
+          <h1>신뢰를 받는 여행</h1>
+          <h2>Trustworthy</h2>
+        </div>
+        <p>
+          <img
+            src="https://company.ybtour.co.kr/images/bg/bg_story_2.jpg"
+            alt=""
+          />
+        </p>
+      </li>
+      <li>
+        <p>
+          <img
+            src="https://company.ybtour.co.kr/images/bg/bg_story_3.jpg"
+            alt=""
+          />
+        </p>
+        <div>
+          <p>일상의 가장 반짝이는 순간을 만듭니다</p>
+          <h1>즐거움을 선사하는 여행</h1>
+          <h2>Joyful</h2>
+        </div>
+      </li>
+      <li>
+        <div>
+          <p>다양한 여행상품으로 여행 문화를 선도합니다</p>
+          <h1>혁신적인 여행</h1>
+          <h2>Innovative</h2>
+        </div>
+        <p>
+          <img
+            src="https://company.ybtour.co.kr/images/bg/bg_story_4.jpg"
+            alt=""
+          />
+        </p>
+      </li>
+    </ul>
+  </body>
+</html>

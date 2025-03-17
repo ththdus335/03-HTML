@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .wrap {
+        max-width: 1800px;
+        width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 24px;
+      }
+      .wrap > .con2 p::before {
+        content: "";
+        background: #000;
+        opacity: 0.4;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+      }
+      .wrap > div > p > img {
+        border-radius: 12px;
+        object-fit: cover;
+        width: 100%;
+      }
+      .wrap > div,
+      .wrap > div > p {
+        width: 100%;
+        height: 100%;
+      }
+      .wrap .con2 > p > img::after {
+        z-index: 1;
+        background: #000;
+        overflow: hidden;
+      }
+      .con1 {
+        height: 50%;
+        padding-left: 60px;
+        box-sizing: border-box;
+      }
+      .con2 {
+        position: relative;
+      }
+      .con1 h1 {
+        letter-spacing: -2px;
+        font-size: 64px;
+        font-weight: bold;
+      }
+
+      .con1 p {
+        letter-spacing: -2px;
+        margin-top: 20px;
+
+        font-size: 20px;
+      }
+      .con1 p span {
+        color: #00a287;
+        font-size: 24px;
+        font-weight: bold;
+      }
+      @media screen and (max-width: 1440px) {
+        .con1 {
+          padding-left: 30px;
+        }
+      }
+      @media screen and (max-width: 1140px) {
+        .wrap {
+          grid-template-columns: 1fr 1fr;
+          width: 90%;
+        }
+
+        .con1 {
+          padding-left: 0;
+          grid-column: 1 / 3;
+          grid-row: 1 / 3;
+        }
+        .con5 {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="con1">
+        <div class="txt">
+          <h1>PROGRAM</h1>
+          <p>
+            <span>KAIST GGGS</span>에서는 녹색성장과 지속가능성 문제해결을
+            위해<br />
+            탄소중립기후기술 및 정책·금융에 대한 통섭적인 이해를 갖춘<br />
+            국가 핵심인재를 양성합니다.
+          </p>
+        </div>
+      </div>
+      <div class="con2">
+        <p>
+          <img
+            src="https://gggs.kaist.ac.kr/html/images/main/sec03_tab01.png"
+            alt=""
+          />
+        </p>
+      </div>
+      <div class="con3">
+        <p>
+          <img
+            src="https://gggs.kaist.ac.kr/html/images/main/sec03_tab02.png"
+            alt=""
+          />
+        </p>
+      </div>
+      <div class="con4">
+        <p>
+          <img
+            src="https://gggs.kaist.ac.kr/html/images/main/sec03_tab03.png"
+            alt=""
+          />
+        </p>
+      </div>
+      <div class="con5">
+        <p>
+          <img
+            src="https://gggs.kaist.ac.kr/html/images/main/sec03_thumb.png"
+            alt=""
+          />
+        </p>
+      </div>
+      <div class="con6">
+        <p>
+          <img
+            src="https://gggs.kaist.ac.kr/html/images/main/sec03_tab04.png"
+            alt=""
+          />
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

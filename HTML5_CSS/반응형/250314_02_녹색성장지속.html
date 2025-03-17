@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .wrap {
+        max-width: 1800px;
+        width: 100%;
+        margin: 0 3%;
+        box-sizing: border-box;
+        display: flex;
+        gap: 24px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .wrap > div {
+        /* height: 50%; */
+      }
+      /* .wrap > div > img, */
+      .wrap > div > p,
+      .wrap > div > p > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .wrap > div:not(:nth-child(5)) img:hover {
+        transform: scale(120%);
+        transition: 0.5s;
+      }
+      .con1 {
+        width: calc((25% - 18px) * 2);
+        padding-left: 60px;
+        box-sizing: border-box;
+      }
+      .con1 h1 {
+        letter-spacing: -2px;
+        font-size: 64px;
+        font-weight: bold;
+      }
+
+      .con1 p {
+        letter-spacing: -1px;
+
+        margin-top: 20px;
+        color: #5d5d5d;
+        font-size: 20px;
+      }
+      .con1 p span {
+        color: #00a287;
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .con2 {
+        border-radius: 12px;
+        overflow: hidden;
+        width: calc(25% - 18px);
+        position: relative;
+      }
+      .wrap > .con2 p::before,
+      .wrap > .con3 p::before,
+      .wrap > .con4 p::before,
+      .wrap > .con6 p::before {
+        content: "";
+        background: #000;
+        opacity: 0.4;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+      }
+      .wrap > .con2:hover p::before,
+      .wrap > .con3:hover p::before,
+      .wrap > .con4:hover p::before,
+      .wrap > .con6:hover p::before {
+        display: none;
+      }
+
+      .con3 {
+        border-radius: 12px;
+        overflow: hidden;
+        width: calc(25% - 18px);
+        position: relative;
+      }
+      .con4 {
+        border-radius: 12px;
+        overflow: hidden;
+        width: calc((25% - 18px) * 2);
+        position: relative;
+      }
+      .con5 {
+        border-radius: 12px;
+        overflow: hidden;
+        width: calc(25% - 18px);
+      }
+      .con6 {
+        border-radius: 12px;
+        overflow: hidden;
+        width: calc(25% - 18px);
+        position: relative;
+      }
+      @media screen and (max-width: 1440px) {
+        .con1 {
+          padding-left: 30px;
+        }
+      }
+      @media screen and (max-width: 1140px) {
+        .con1 {
+          flex: 0 0 100%;
+        }
+        .con2,
+        .con3,
+        .con4,
+        .con6 {
+          flex: 0 0 48%;
+        }
+        .con5 {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="con1">
+        <div class="txt">
+          <h1>PROGRAM</h1>
+          <p>
+            <span>KAIST GGGS</span>에서는 녹색성장과 지속가능성 문제해결을
+            위해<br />
+            탄소중립기후기술 및 정책·금융에 대한 통섭적인 이해를 갖춘<br />
+            국가 핵심인재를 양성합니다.
+          </p>
+        </div>
+      </div>
+      <div class="con2">
+        <p>
+          <img
+            src="https://gggs.kaist.ac.kr/html/images/main/sec03_tab01.png"
+            alt=""
+          />
+        </p>
+      </div>
+      <div class="con3">
+        <p>
+          <img
+            src="https://gggs.kaist.ac.kr/html/images/main/sec03_tab02.png"
+            alt=""
+          />
+        </p>
+      </div>
+      <div class="con4">
+        <p>
+          <img
+            src="https://gggs.kaist.ac.kr/html/images/main/sec03_tab03.png"
+            alt=""
+          />
+        </p>
+      </div>
+      <div class="con5">
+        <p>
+          <img
+            src="https://gggs.kaist.ac.kr/html/images/main/sec03_thumb.png"
+            alt=""
+          />
+        </p>
+      </div>
+      <div class="con6">
+        <p>
+          <img
+            src="https://gggs.kaist.ac.kr/html/images/main/sec03_tab04.png"
+            alt=""
+          />
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

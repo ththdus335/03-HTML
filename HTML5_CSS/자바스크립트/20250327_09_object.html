@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style></style>
+  </head>
+  <body>
+    <script>
+      // let student = {}
+
+      /*student.kor = 90;
+      student.eng = 70;
+      student.math = 80;
+
+      let student = { kor: 90, eng: 70, math: 80 };
+      student.sum = student.kor + student.eng + student.math;
+      student.avg = student.sum / 3;
+
+      let student = new Object();
+      student.kor = 90;
+      student.eng = 70;
+      student.math = 80; */
+      let student = { name: "홍길동", kor: 90, eng: 70, math: 80 };
+      student.sum = student.kor + student.eng + student.math;
+      student.avg = student.sum / 3;
+
+      document.write(
+        student.name + "님의 ",
+        "국어 점수는 ",
+        student.kor,
+        "점 이고 ",
+        "<br>",
+        "영어 점수는 ",
+        student.eng,
+        "점 이고 수학 점수는 ",
+        student.math,
+        "이고 " + "<br>",
+        +"총점은 " + student.sum + "평균은 " + student.avg
+      );
+    </script>
+  </body>
+</html>

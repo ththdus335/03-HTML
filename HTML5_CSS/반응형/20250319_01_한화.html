@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #f6f0ec;
+      }
+      .hanwha {
+        text-align: center;
+        width: 100%;
+        max-width: 1905px;
+        padding: 0 80px;
+        margin: 0 auto;
+        box-sizing: border-box;
+      }
+      .hanwha > h1 {
+        margin-bottom: 32px;
+        letter-spacing: -1px;
+        font-size: 80px;
+      }
+      .hanwha ul {
+        display: flex;
+        list-style: none;
+        text-align: center;
+        justify-content: center;
+        gap: 16px;
+      }
+      .hanwha ul li {
+        flex: 1;
+        padding: 4% 3%;
+        background: #efe8e4;
+        border-radius: 2%;
+      }
+      .hanwha ul li .txt {
+        letter-spacing: -1px;
+        margin-top: 48px;
+      }
+      .hanwha ul li .txt h1 span {
+        color: #f37321;
+      }
+      .hanwha ul li .txt p {
+        font-weight: 500;
+        color: #616161;
+        letter-spacing: -0.5px;
+        padding-top: 32px;
+        margin-top: 32px;
+        border-top: 1px solid #ccc;
+      }
+
+      @media screen and (max-width: 767px) {
+        .hanwha {
+          padding: 0 20px;
+        }
+        .hanwha ul {
+          margin: 0 auto;
+          width: 100%;
+          flex-direction: column;
+        }
+        .hanwha ul li img {
+          width: 20%;
+        }
+        .hanwha ul li {
+          display: flex;
+          width: 100%;
+          text-align: left;
+          justify-content: space-evenly;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hanwha">
+      <h1>Our Brand Values</h1>
+      <ul>
+        <li>
+          <img
+            src="https://www.hanwha.com/assets/img/main/sustainable-and-inclusive-growth.svg"
+            alt=""
+          />
+          <div class="txt">
+            <h1>
+              Sustainable and<br />
+              Inclusive <span>Growth</span>
+            </h1>
+            <p>
+              We strive for social, economic, and<br />
+              environmental prosperity for all
+            </p>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://www.hanwha.com/assets/img/main/technology-and-solution-driven-innovation.svg"
+            alt=""
+          />
+          <div class="txt">
+            <h1>Technology and<br />Solution-driven <span>Innovation</span></h1>
+            <p>
+              Through technological innovation, we<br />provide solutions from
+              people to planet
+            </p>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://www.hanwha.com/assets/img/main/hanwha-enhances-lives.svg"
+            alt=""
+          />
+          <div class="txt">
+            <h1>Enhancing<br /><span>Lives</span></h1>
+            <p>
+              We lay the foundation for a fulfilling life<br />through our
+              technologies, products, and<br />services
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

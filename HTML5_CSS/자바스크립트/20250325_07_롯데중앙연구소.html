@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      ul {
+        list-style: none;
+      }
+
+      div.lotte .nav {
+        display: flex;
+        gap: 10px;
+        margin: 30px 0 16px 0;
+        padding: 80px 0;
+        justify-content: center;
+      }
+      div.lotte .nav li {
+        cursor: pointer;
+        text-align: center;
+        line-height: 54px;
+        font-size: 20px;
+        width: 200px;
+        height: 54px;
+        background-color: rgba(51, 51, 51, 0.8);
+        color: rgba(255, 255, 255, 0.5);
+        border-radius: 27px;
+      }
+      div.lotte .nav li.color {
+        background-color: #da291c;
+        color: #fff;
+      }
+      .menu .tt .con {
+        position: relative;
+        display: none;
+      }
+      .menu .tt .con.on {
+        display: block;
+      }
+      .con .txt {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      .menu .tt {
+        position: relative;
+      }
+      .menu .tt li {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="lotte">
+      <ul class="nav">
+        <li>연구개발</li>
+        <li>기초연구</li>
+        <li>패키지연구</li>
+        <li>기술연구</li>
+        <li>안전관리</li>
+        <li>연구전략</li>
+      </ul>
+      <div class="menu">
+        <ul class="tt">
+          <li>
+            <div class="con">
+              <p>
+                <img
+                  src="https://www.lotternd.com/assets/images/sub/research/research-ban1.jpg"
+                  alt=""
+                />
+              </p>
+              <div class="txt">
+                <h1>연구개발</h1>
+                <p>
+                  소비자의 니즈와 시장 선호도에 부합하는 신제품을 출시하고
+                  품질을 개선합니다.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="con">
+              <p>
+                <img
+                  src="https://www.lotternd.com/assets/images/sub/research/research-ban2.jpg"
+                  alt=""
+                />
+              </p>
+              <div class="txt">
+                <h1>기초연구</h1>
+                <p>
+                  바이오 연구, 신소재 발굴 등 개발의 기틀을 마련하고 신규
+                  솔루션을 개척합니다.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="con">
+              <p>
+                <img
+                  src="https://www.lotternd.com/assets/images/sub/research/research-ban3.jpg"
+                  alt=""
+                />
+              </p>
+              <div class="txt">
+                <h1>연구개발</h1>
+                <p>
+                  소비자의 니즈와 시장 선호도에 부합하는 신제품을 출시하고
+                  품질을 개선합니다.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="con">
+              <p>
+                <img
+                  src="https://www.lotternd.com/assets/images/sub/research/research-ban4.jpg"
+                  alt=""
+                />
+              </p>
+              <div class="txt">
+                <h1>기초연구</h1>
+                <p>
+                  바이오 연구, 신소재 발굴 등 개발의 기틀을 마련하고 신규
+                  솔루션을 개척합니다.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="con">
+              <p>
+                <img
+                  src="https://www.lotternd.com/assets/images/sub/research/research-ban5.jpg"
+                  alt=""
+                />
+              </p>
+              <div class="txt">
+                <h1>연구개발</h1>
+                <p>
+                  소비자의 니즈와 시장 선호도에 부합하는 신제품을 출시하고
+                  품질을 개선합니다.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="con">
+              <p>
+                <img
+                  src="https://www.lotternd.com/assets/images/sub/research/research-ban6.jpg"
+                  alt=""
+                />
+              </p>
+              <div class="txt">
+                <h1>기초연구</h1>
+                <p>
+                  바이오 연구, 신소재 발굴 등 개발의 기틀을 마련하고 신규
+                  솔루션을 개척합니다.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      function my() {
+        document
+          .querySelectorAll("div.menu ul li .con")
+          .forEach(function (v, k) {
+            v.classList.remove("on");
+          });
+        document.querySelectorAll("div.lotte .nav li").forEach(function (v, k) {
+          v.classList.remove("color");
+        });
+      }
+
+      document.querySelectorAll("div.menu ul li .con")[0].classList.add("on");
+      document.querySelectorAll("div.lotte .nav li")[0].classList.add("color");
+
+      document.querySelectorAll("div.lotte .nav li").forEach(function (v, k) {
+        v.onclick = function () {
+          my();
+
+          document
+            .querySelectorAll("div.menu ul li .con")
+            [k].classList.add("on");
+          document
+            .querySelectorAll("div.lotte .nav li")
+            [k].classList.add("color");
+        };
+      });
+    </script>
+  </body>
+</html>

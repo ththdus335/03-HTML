@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .wrap {
+        margin: 0 auto;
+        width: 100%;
+
+        max-width: 1500px;
+        display: flex;
+        gap: 20px;
+        padding: 160px 30px;
+        box-sizing: border-box;
+      }
+      .wrap .nav {
+        margin-right: 10%;
+      }
+      .wrap .nav h2 {
+        font-size: 48px;
+        line-height: 50px;
+        margin-bottom: 20px;
+      }
+      .wrap ul {
+        list-style: none;
+        flex: 1 1 25%;
+        margin-top: 20px;
+      }
+      .wrap ul li {
+        margin-top: 20px;
+        font-size: 28px;
+        line-height: 42px;
+      }
+      div.photo {
+        /* margin-right: 10%; */
+        flex: 1 1 65%;
+        position: relative;
+        height: 100%;
+        width: 100%;
+        margin: 0 10px;
+        align-items: center;
+        display: none;
+      }
+      div.photo > div {
+        align-items: center;
+        margin: 0 auto;
+        flex: 1 1 80%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: row;
+      }
+      div.photo .on {
+        display: block;
+        color: #f00;
+      }
+      div.photo > div.con {
+        border: 1px solid #e5e5e5;
+      }
+
+      div.photo > div.con > p {
+        margin: 0 auto;
+        font-size: 0;
+        width: 65%;
+      }
+      div.photo > div.con > p > img {
+        width: 100%;
+        object-fit: cover;
+      }
+      div.photo > div.con > .txt {
+        flex: 1 1 10%;
+        color: #fff;
+        background-color: #000;
+        padding: 50px;
+        height: 100%;
+        box-sizing: border-box;
+      }
+      div.photo > div.con > .txt > h2 {
+        font-size: 22px;
+        margin-bottom: 22px;
+        letter-spacing: -0.54px;
+        line-height: 35.2px;
+      }
+      div.photo > div.con > .txt > p:nth-of-type(1) {
+        margin-bottom: 32px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="nav">
+        <h2>
+          What’s<br />
+          New
+        </h2>
+        <ul>
+          <li>보도자료</li>
+          <li>언론보도</li>
+          <li>CJBS Now</li>
+          <li>미디어</li>
+        </ul>
+      </div>
+      <div class="photo">
+        <div class="con">
+          <p>
+            <img
+              src="	https://www.cjbioscience.com/wp-content/themes/cj/asset/img/logo-bk.svg"
+              alt=""
+            />
+          </p>
+          <div class="txt">
+            <h2>
+              CJ바이오사이언스, ‘ECCO 2025’에서 ‘CJRB-201’ 전임상 데이터
+              발표…”26년 임상 진입 목표”
+            </h2>
+            <p>
+              -&nbsp;‘CJRB-201’, 강력한 항염효과로 주목받고 있는
+              ‘페칼리박테리움’ 균주 중 ‘조절 T세포’ 가장 효과적으로 유도
+              --&nbsp;다양한 동물실험 통해 체중 감소 억제, 질병활성 지수 개선,
+              조직 병리 완화 등
+            </p>
+            <p>2025-02-18</p>
+          </div>
+        </div>
+
+        <div class="con">
+          <p>
+            <img
+              src="	https://www.cjbioscience.com/wp-content/uploads/kboard_thumbnails/4/202502/67bfd9c9b40fa1956256.jpg"
+              alt=""
+            />
+          </p>
+          <div class="txt">
+            <h2>
+              한국바이오협회 마이크로바이옴신약기업협의회, 2025년 정기 총회
+            </h2>
+            <p>
+              -&nbsp;‘CJRB-201’, 강력한 항염효과로 주목받고 있는
+              ‘페칼리박테리움’ 균주 중 ‘조절 T세포’ 가장 효과적으로 유도
+              --&nbsp;다양한 동물실험 통해 체중 감소 억제, 질병활성 지수 개선,
+              조직 병리 완화 등
+            </p>
+            <p>2025-02-18</p>
+          </div>
+        </div>
+        <div class="con">
+          <p>
+            <img
+              src="	https://www.cjbioscience.com/wp-content/themes/cj/asset/img/logo-bk.svg"
+              alt=""
+            />
+          </p>
+          <div class="txt">
+            <h2>
+              CJ바이오사이언스, ‘ECCO 2025’에서 ‘CJRB-201’ 전임상 데이터
+              발표…”26년 임상 진입 목표”
+            </h2>
+            <p>
+              -&nbsp;‘CJRB-201’, 강력한 항염효과로 주목받고 있는
+              ‘페칼리박테리움’ 균주 중 ‘조절 T세포’ 가장 효과적으로 유도
+              --&nbsp;다양한 동물실험 통해 체중 감소 억제, 질병활성 지수 개선,
+              조직 병리 완화 등
+            </p>
+            <p>2025-02-18</p>
+          </div>
+        </div>
+        <div class="con">
+          <p>
+            <img
+              src="	https://www.cjbioscience.com/wp-content/uploads/kboard_attached/6/202502/67a9ac62bdfc63227496.jpg"
+              alt=""
+            />
+          </p>
+          <div class="txt">
+            <h2>
+              CJ바이오사이언스, ‘ECCO 2025’에서 ‘CJRB-201’ 전임상 데이터
+              발표…”26년 임상 진입 목표”
+            </h2>
+            <p>
+              -&nbsp;‘CJRB-201’, 강력한 항염효과로 주목받고 있는
+              ‘페칼리박테리움’ 균주 중 ‘조절 T세포’ 가장 효과적으로 유도
+              --&nbsp;다양한 동물실험 통해 체중 감소 억제, 질병활성 지수 개선,
+              조직 병리 완화 등
+            </p>
+            <p>2025-02-18</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function my() {
+        document.getElementsByTagName("con").forEach(function (value, key) {
+          value.classList.remove("on");
+        });
+
+        document.querySelectorAll("li").forEach(function (value, key) {
+          value.classList.remove("on");
+        });
+      }
+
+      document.getElementsByTagName("con")[0].classList.add("on");
+
+      document.querySelectorAll("li").forEach(function (value, key) {
+        value.onclick = function () {
+          my();
+          document.querySelectorAll("con")[key].classList.add("on");
+          document.querySelectorAll("li")[key].classList.add("on");
+        };
+      });
+    </script>
+  </body>
+</html>

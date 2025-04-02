@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      @font-face {
+        font-family: "Pretendard";
+        src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+          format("woff");
+        font-weight: 400;
+        font-style: normal;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        margin-top: 60px;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+      body {
+        font-family: "Pretendard";
+      }
+      .cj {
+        width: 100%;
+        max-width: 1420px;
+        padding: 140px 60px;
+        margin-top: 140px;
+        margin: 0 auto;
+        box-sizing: border-box;
+      }
+
+      .cj .olive {
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+      }
+      .cj .olive .oo .left ul li a.on {
+        color: #82dc28;
+      }
+      .cj .olive .right div p.on {
+        color: #82dc28;
+      }
+      .cj .olive .oo .left {
+        width: 40%;
+        position: fixed;
+      }
+      .cj .olive .oo .left h1 {
+        font-size: 54px;
+        font-weight: bold;
+      }
+      .cj .olive .right {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        margin-left: 13px;
+      }
+
+      .cj .olive .right > div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .cj .olive .right > div > p {
+        width: 3%;
+        height: 100%;
+      }
+
+      .cj .olive .right .pic {
+        width: 90%;
+      }
+      .cj .olive .right > div > .pic > div > h2 {
+        margin-top: 46px;
+        font-size: 30px;
+        line-height: 40px;
+      }
+      .cj .olive .right > div > .pic > div > p {
+        margin-top: 34px;
+        font-size: 18px;
+        color: #565e65;
+        line-height: 28px;
+      }
+
+      .cj .olive .right > div > .pic > div > p > a {
+        position: relative;
+        margin-top: 40px;
+        font-weight: bold;
+        font-size: 16px;
+        color: #000;
+        border-bottom: 1px solid;
+      }
+      .cj .olive .right > div > div > p > span {
+        display: none;
+      }
+      .cj .olive .right p,
+      .cj .olive .right p img {
+        width: 100%;
+      }
+      a:visited {
+        color: #000;
+      }
+      #link1,
+      #link2,
+      #link3,
+      .cj .olive .right > div > .pic {
+        padding-top: 140px;
+      }
+
+      @media screen and (max-width: 1169px) {
+        .cj {
+          margin: 0 auto;
+          width: 90%;
+          padding: 70px 0 0 0;
+        }
+        .cj .olive {
+          flex-direction: column;
+        }
+        .cj .olive .oo .left {
+          width: 100%;
+          position: relative;
+        }
+        ul {
+          display: none;
+        }
+        .cj .olive .right {
+          margin: 50px auto;
+          width: 100%;
+        }
+        .cj .olive .right > div > p {
+          color: #82dc28;
+        }
+        .cj .olive .right > div > p > span {
+          color: #565e65;
+          font-size: 12px;
+          display: block;
+          height: 20px;
+        }
+        .cj .olive .right p img {
+          margin-top: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cj">
+      <div class="olive">
+        <div class="oo">
+          <div class="left">
+            <h1>OLIVE YOUNG<br />Platforms</h1>
+            <ul>
+              <li>
+                <a href="#link1">올리브영 매장</a>
+              </li>
+              <li>
+                <a href="#link2">올리브영 Online (국내)</a>
+              </li>
+              <li>
+                <a href="#link3">올리브영 글로벌</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="right">
+          <div class="con1">
+            <p id="link1">01</p>
+            <div class="pic">
+              <p>
+                <span>올리브영 매장</span>
+                <img
+                  src="https://corp.oliveyoung.com/img/tmp/tmp_img_platform1-cf428ca64855adc4a1062251b83cf683.jpg;jsessionid=2B5EEF5E9E5772F44A9F313C9F163E96"
+                  alt=""
+                />
+              </p>
+              <div>
+                <h2>
+                  고객과 가장 가까운 곳에서<br />건강한 아름다움을 제안합니다.
+                </h2>
+                <p>
+                  우리는 1,370여개의 매장을 기반으로 고객에게 뷰티&amp;헬스
+                  상품을 큐레이션합니다.<br />또한 체험형 콘텐츠와 커머스의
+                  연계를 통해 파트너사들에게<br />
+                  매력적인 브랜딩, 마케팅 채널로 진화하고 있습니다.
+                </p>
+                <p><a href="#">올리브영 매장이 보고싶다면?</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="con2">
+            <p id="link2">02</p>
+            <div class="pic">
+              <p>
+                <span>올리브영 Online (국내)</span>
+                <img
+                  src="https://corp.oliveyoung.com/img/tmp/tmp_img_platform2-777eecd5b0d28e7c17848bfe3dffe645.jpg;jsessionid=2B5EEF5E9E5772F44A9F313C9F163E96"
+                  alt=""
+                />
+              </p>
+              <div>
+                <h2>
+                  고객이 건강한 아름다움을 찾아가는<br />온라인 PLAYGROUND를
+                  제공합니다.
+                </h2>
+                <p>
+                  우리는 차별화된 온라인 콘텐츠와 AI기술 기반 상품 추천을 통해
+                  월 이용자 수 532만명,<br />멤버십 회원 수 1,560만명 이상의
+                  뷰티&amp;헬스 커뮤니티를 구현했습니다.<br />또한 업계 최초
+                  당일 배송 서비스인 오늘드림을 실행하여 고객경험을
+                  혁신했습니다.
+                </p>
+                <p><a href="#">올리브영 Online 서비스가 궁금하다면?</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="con3">
+            <p id="link3">03</p>
+            <div class="pic">
+              <p>
+                <span>올리브영 글로벌</span>
+                <img
+                  src="https://corp.oliveyoung.com/img/tmp/tmp_img_platform3-c78371c66bba75b227096ecd0f128e12.jpg;jsessionid=2B5EEF5E9E5772F44A9F313C9F163E96"
+                  alt=""
+                />
+              </p>
+              <div>
+                <h2>전세계에 한국의<br />뷰티&amp;헬스를 알립니다.</h2>
+                <p>
+                  우리는 한국의 뷰티&amp;헬스 브랜드들이 세계로 뻗어 나가는
+                  교두보 역할을 수행합니다.<br />2019년 런칭한 글로벌몰과 연간
+                  약 500만명 이상이 외국인 고객이 방문하는 국내 글로벌
+                  특화매장은<br />
+                  파트너사와 함께 글로벌 시장에서 동반 성장을 할 수 있는 핵심
+                  원동력입니다.
+                </p>
+                <p><a href="#">올리브영의 글로벌 플랫폼을 보고싶다면?</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      let conTop = document.querySelector("#con2").offsetTop;
+
+      document
+        .querySelectorAll(".cj .olive .oo .left ul li a")[0]
+        .classList.add("on");
+      document
+        .querySelectorAll(".cj .olive .right div p")[0]
+        .classList.add("on");
+
+      function my() {
+        document
+          .querySelectorAll(".cj .olive .oo .left ul li")
+          .forEach(function (v, k) {
+            v.querySelector("a").classList.remove("on");
+          });
+      }
+
+      document
+        .querySelectorAll(".cj .olive .oo .left ul li")
+        .forEach(function (v, k) {
+          v.onclick = function (e) {
+            e.preventDefault();
+            my();
+            v.querySelector("a").classList.add("on");
+            document
+              .querySelectorAll(".cj .olive .right div p")
+              [k].classList.add("on");
+            window.scrollTo({
+              top: document.querySelector(`#link${k + 1}`).offsetTop,
+              behavior: "smooth",
+            });
+          };
+        });
+    </script>
+  </body>
+</html>

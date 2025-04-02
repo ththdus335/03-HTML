@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      div {
+        position: relative;
+      }
+      div p {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+      }
+      div p.on {
+        display: block;
+      }
+      ul li.on {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>photo1</li>
+      <li>photo2</li>
+      <li>photo3</li>
+      <li>photo4</li>
+      <li>photo5</li>
+    </ul>
+    <div>
+      <p><img src="../images/photo1.jpg" alt="" /></p>
+      <p><img src="../images/photo2.jpg" alt="" /></p>
+      <p><img src="../images/photo3.jpg" alt="" /></p>
+      <p><img src="../images/photo4.jpg" alt="" /></p>
+      <p><img src="../images/photo5.jpg" alt="" /></p>
+    </div>
+    <script>
+      function my() {
+        document.querySelectorAll("p").forEach(function (value, key) {
+          value.classList.remove("on");
+        });
+
+        document.querySelectorAll("li").forEach(function (value, key) {
+          value.classList.remove("on");
+        }); //다른거눌렀을때 on없애기//
+      }
+
+      document.getElementsByTagName("p")[0].classList.add("on"); //첫이미지 나오게//
+      document.getElementsByTagName("li")[0].classList.add("on"); //첫 li 빨간색//
+      document.querySelectorAll("li").forEach(function (value, key) {
+        value.onclick = function () {
+          my();
+          document.querySelectorAll("p")[key].classList.add("on");
+          document.querySelectorAll("li")[key].classList.add("on");
+        };
+      });
+    </script>
+  </body>
+</html>

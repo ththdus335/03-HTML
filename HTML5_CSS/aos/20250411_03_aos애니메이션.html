@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      section {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      section > div {
+        width: 200px;
+        height: 200px;
+        background: #ccc;
+      }
+      section:nth-child(1) {
+        background: #aaa;
+      }
+      section:nth-child(2) {
+        background: #ddd;
+      }
+      section:nth-child(3) {
+        background: #ddd;
+      }
+      section:nth-child(4) {
+        background: #eee;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section></section>
+    <section>
+      <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+        fade-up
+      </div>
+    </section>
+    <section><div data-aos="fade-down">fade-down</div></section>
+    <section><div data-aos="fade-left">fade-left</div></section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper4 = new Swiper(".mySwiper4", {
+        grabCursor: true,
+        speed: 800,
+        effect: "creative",
+        mousewheel: true,
+        creativeEffect: {
+          prev: {
+            opacity: 0,
+            rotate: [0, 0, -45],
+          },
+          next: {
+            opacity: 0,
+            rotate: [0, 0, 45],
+          },
+        },
+      });<script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+    </script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

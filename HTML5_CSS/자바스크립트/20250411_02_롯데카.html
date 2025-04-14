@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        height: 100vh;
+      }
+      div {
+        background: #f00;
+        width: 50vw;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div></div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper4 = new Swiper(".mySwiper4", {
+        grabCursor: true,
+        speed: 800,
+        effect: "creative",
+        mousewheel: true,
+        creativeEffect: {
+          prev: {
+            opacity: 0,
+            rotate: [0, 0, -45],
+          },
+          next: {
+            opacity: 0,
+            rotate: [0, 0, 45],
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
